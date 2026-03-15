@@ -30,4 +30,18 @@ Model se temelji na prilagođenoj **ResNet18** arhitekturi. Zbog asimetrije oči
 Sustav se trenira i testira pomoću velikog skupa podataka za procjenu pogleda pod nazivom **[Gaze360](https://gaze360.csail.mit.edu/)**. 
 Podaci se ucitavaju iz prilagođenih `train.txt`, `validation.txt` i `test.txt` datoteka koje sadrže putanje do slika te stvarne 3D komponente pogleda. Model primjenjuje jednostavan izračun transformacije 3D vektora pogleda (iz Kartezijevog sustava) u sferne vrijednosti (*yaw*, *pitch*). Tijekom eksperimenata su isprobane rezolucije slika: `16x16`, `32x32` i `64x64` pri čemu su veće rezolucije ostvarile preciznije rezultate na testnom skupu (između 9° i 12° prosječno).
 
-Najbolji rezultati za ovaj skup pocatak postignuti su za kombinaciju `64x64` rezoluciju ulazne slike u `batch_size = 32` 
+Najmanja prosječna pogreška za ovaj skup podataka postignuta je za kombinaciju `64x64` rezolucije ulazne slike i `batch_size = 32` koja je iznosila oko 9.6° razlike između predviđenog smjera pogleda i točne vrijednosti.
+
+
+## Instalacija i pokretanje
+
+pip install torch torchvision
+pip install numpy matplotlib pillow tensorboard
+
+python Gaze-estimation-final-code.py
+
+python best-model-vizualization.py
+
+tensorboard --logdir=runs_GAZE/
+
+
