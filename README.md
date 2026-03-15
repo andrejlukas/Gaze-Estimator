@@ -32,10 +32,12 @@ Podaci se ucitavaju iz prilagođenih `train.txt`, `validation.txt` i `test.txt` 
 
 Najmanja prosječna pogreška za ovaj skup podataka postignuta je za kombinaciju `64x64` rezolucije ulazne slike i `batch_size = 32` koja je iznosila oko 9.6° razlike između predviđenog smjera pogleda i točne vrijednosti.
 
+[!slika1](https://github.com/andrejlukas/Gaze-Estimator/blob/8c02a9eafae79c730734fc3607ada72cb2ed23d0/images/Figure_1.png)
 
 ## Instalacija i pokretanje
 
 pip install torch torchvision
+
 pip install numpy matplotlib pillow tensorboard
 
 python Gaze-estimation-final-code.py
