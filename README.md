@@ -32,8 +32,10 @@ Podaci se ucitavaju iz prilagođenih `train.txt`, `validation.txt` i `test.txt` 
 
 Najmanja prosječna pogreška za ovaj skup podataka postignuta je za kombinaciju `64x64` rezolucije ulazne slike i `batch_size = 32` koja je iznosila oko 9.6° razlike između predviđenog smjera pogleda i točne vrijednosti.
 
-![slika1](https://github.com/andrejlukas/Gaze-Estimator/blob/8c02a9eafae79c730734fc3607ada72cb2ed23d0/images/Figure_1.png)
-![slika1](https://github.com/andrejlukas/Gaze-Estimator/blob/e0be0048d63c1d88faee1c22ee9b3900f3d8ebe5/images/Figure_2.png)
+![slika1](https://github.com/andrejlukas/Gaze-Estimator/blob/4e2d82d31d3d283ccdf2cbc149f58a98699c6a17/images/Figure_3.png)
+![slika2](https://github.com/andrejlukas/Gaze-Estimator/blob/e0be0048d63c1d88faee1c22ee9b3900f3d8ebe5/images/Figure_2.png)
+
+
 ## Instalacija i pokretanje
 
 pip install torch torchvision
